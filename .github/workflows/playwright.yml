@@ -30,6 +30,7 @@ jobs:
 
       - name: Start app
         run: |
+          yarn install
           yarn run dev &
           npx wait-on http://localhost:8080
 
